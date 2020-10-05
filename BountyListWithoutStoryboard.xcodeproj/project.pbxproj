@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		EA9243972529DB8B0085EA5E /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9243962529DB8B0085EA5E /* BountyInfo.swift */; };
 		EA9243992529DBCC0085EA5E /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9243982529DBCB0085EA5E /* BountyViewModel.swift */; };
 		EA92439B2529E0610085EA5E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92439A2529E0610085EA5E /* GridCell.swift */; };
+		EA92439D252B5E5F0085EA5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92439C252B5E5F0085EA5E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EA9243962529DB8B0085EA5E /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 		EA9243982529DBCB0085EA5E /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
 		EA92439A2529E0610085EA5E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		EA92439C252B5E5F0085EA5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 				BF8E6E6C885194258D2EF069 /* Pods-BountyListWithoutStoryboard.debug.xcconfig */,
 				2A7F88DB18683CA2D2D64D2F /* Pods-BountyListWithoutStoryboard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +95,7 @@
 				EA92438B2529DAA60085EA5E /* Assets.xcassets */,
 				EA92438D2529DAA60085EA5E /* LaunchScreen.storyboard */,
 				EA9243902529DAA60085EA5E /* Info.plist */,
+				EA92439C252B5E5F0085EA5E /* DetailViewController.swift */,
 			);
 			path = BountyListWithoutStoryboard;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				EA9243992529DBCC0085EA5E /* BountyViewModel.swift in Sources */,
 				EA9243852529DAA50085EA5E /* SceneDelegate.swift in Sources */,
 				EA92439B2529E0610085EA5E /* GridCell.swift in Sources */,
+				EA92439D252B5E5F0085EA5E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

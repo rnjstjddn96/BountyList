@@ -32,6 +32,6 @@ class BountyViewModel {
     }
     
     func updateUI(_ index: Int) -> BountyInfo {
-        return bountyInfoList[index]
+        return sortedBountyList[index]
     }
 }

@@ -18,6 +18,7 @@ class BountyViewController: UIViewController, UICollectionViewDelegate, UICollec
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.backgroundColor = .white
         return collectionView
     }()
@@ -43,6 +44,7 @@ class BountyViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     
+    //collectionView Datasource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numOfBountyList
     }
@@ -54,6 +56,17 @@ class BountyViewController: UIViewController, UICollectionViewDelegate, UICollec
         return cell
     }
     
+    //collectionViewDelegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = DetailViewController()
+        detailViewController.imgView?.image = viewModel.sortedBountyList[indexPath.row].image
+        detailViewController.nameLabel.text = viewModel.sortedBountyList[indexPath.row].name
+        detailViewController.priceLabel.text = String(viewModel.sortedBountyList[indexPath.row].bounty)
+        present(detailViewController, animated: true, completion: nil)
+    }
+    
+    
+    //collectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSpacing: CGFloat = 10
         let textAreaHeight: CGFloat = 65
