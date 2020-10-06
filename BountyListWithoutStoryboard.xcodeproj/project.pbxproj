@@ -17,6 +17,7 @@
 		EA9243992529DBCC0085EA5E /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9243982529DBCB0085EA5E /* BountyViewModel.swift */; };
 		EA92439B2529E0610085EA5E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92439A2529E0610085EA5E /* GridCell.swift */; };
 		EA92439D252B5E5F0085EA5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92439C252B5E5F0085EA5E /* DetailViewController.swift */; };
+		EA9243A0252C87010085EA5E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92439F252C87010085EA5E /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EA9243982529DBCB0085EA5E /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
 		EA92439A2529E0610085EA5E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		EA92439C252B5E5F0085EA5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EA92439F252C87010085EA5E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,18 +88,43 @@
 		EA9243812529DAA50085EA5E /* BountyListWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				EA9243A2252C89110085EA5E /* Model */,
+				EA9243A1252C89090085EA5E /* View */,
+				EA92439E252C86700085EA5E /* ViewModel */,
 				EA9243822529DAA50085EA5E /* AppDelegate.swift */,
 				EA9243842529DAA50085EA5E /* SceneDelegate.swift */,
-				EA92439A2529E0610085EA5E /* GridCell.swift */,
-				EA9243962529DB8B0085EA5E /* BountyInfo.swift */,
-				EA9243982529DBCB0085EA5E /* BountyViewModel.swift */,
-				EA9243862529DAA50085EA5E /* BountyViewController.swift */,
 				EA92438B2529DAA60085EA5E /* Assets.xcassets */,
 				EA92438D2529DAA60085EA5E /* LaunchScreen.storyboard */,
 				EA9243902529DAA60085EA5E /* Info.plist */,
-				EA92439C252B5E5F0085EA5E /* DetailViewController.swift */,
 			);
 			path = BountyListWithoutStoryboard;
+			sourceTree = "<group>";
+		};
+		EA92439E252C86700085EA5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA9243982529DBCB0085EA5E /* BountyViewModel.swift */,
+				EA92439F252C87010085EA5E /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA9243A1252C89090085EA5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA92439A2529E0610085EA5E /* GridCell.swift */,
+				EA9243862529DAA50085EA5E /* BountyViewController.swift */,
+				EA92439C252B5E5F0085EA5E /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA9243A2252C89110085EA5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA9243962529DB8B0085EA5E /* BountyInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +248,7 @@
 				EA9243852529DAA50085EA5E /* SceneDelegate.swift in Sources */,
 				EA92439B2529E0610085EA5E /* GridCell.swift in Sources */,
 				EA92439D252B5E5F0085EA5E /* DetailViewController.swift in Sources */,
+				EA9243A0252C87010085EA5E /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

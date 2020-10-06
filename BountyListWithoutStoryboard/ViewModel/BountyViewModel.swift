@@ -31,7 +31,7 @@ class BountyViewModel {
         return sortedBountyList.count
     }
     
-    func updateUI(_ index: Int) -> BountyInfo {
+    func bountyInfo(_ index: Int) -> BountyInfo {
         return sortedBountyList[index]
     }
 }

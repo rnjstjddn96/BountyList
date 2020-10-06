@@ -51,7 +51,7 @@ class BountyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridCell.identifier, for: indexPath) as? GridCell else { return UICollectionViewCell() }
-        let bountyInfo = self.viewModel.updateUI(indexPath.row)
+        let bountyInfo = self.viewModel.bountyInfo(indexPath.row)
         cell.update(info: bountyInfo)
         return cell
     }
@@ -59,9 +59,8 @@ class BountyViewController: UIViewController, UICollectionViewDelegate, UICollec
     //collectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = DetailViewController()
-        detailViewController.imgView?.image = viewModel.sortedBountyList[indexPath.row].image
-        detailViewController.nameLabel.text = viewModel.sortedBountyList[indexPath.row].name
-        detailViewController.priceLabel.text = String(viewModel.sortedBountyList[indexPath.row].bounty)
+        let boundtyInfo = viewModel.bountyInfo(indexPath.row)
+        detailViewController.viewModel.update(model: boundtyInfo)
         present(detailViewController, animated: true, completion: nil)
     }
     
